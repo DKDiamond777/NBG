@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Purista-Light';
+    src: url('/fonts/Purista-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Purista-Medium';
+    src: url('/fonts/Purista-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Purista-SemiBold';
+    src: url('/fonts/Purista-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Purista-Bold';
+    src: url('/fonts/Purista-Bold.ttf') format('truetype');
+}
+/* Style the form container */
+.rendered-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Purista-Medium";
+}
+.rendered-form h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* Style the form labels */
+.formbuilder-text-label, .formbuilder-checkbox-group-label {
+    font-size: 20px;
+    font-family: "Purista-Medium";
+}
+/* Style the form fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Purista-Medium";
+    font-size: 15px;
+}
+::placeholder {
+    color: black;
+  }
+/* Style the submit button */
+.btn {
+    display: inline-block;
+    background-color: #622db3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #9146ff;
+}
+/* Style the form labels */
+.formbuilder-text-label, .formbuilder-checkbox-group-label {
+    font-weight: bold;
+}
+/* Style the required indicator */
+.formbuilder-required {
+    color: rgb(255, 255, 255);
+}
+/* Style the checkbox options */
+.checkbox-group {
+    margin-top: 5px;
+}
+.formbuilder-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.formbuilder-checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+.formbuilder-checkbox input[type="checkbox"].other-option:checked + label .other-val {
+    display: block;
+}
