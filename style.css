@@ -81,7 +81,12 @@ body {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #9146ff;
+  background: linear-gradient(to left, #ca9aff, #be86ff, #b072ff, #a15dff, #9146ff);
+  width: 0%;
+  bottom: 10px;
+}
+.nav-link:hover::before {
+  width: 100%;
 }
 .nav-link-ltr::before {
   width: 0%;
