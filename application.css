@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Purista-Light';
-    src: url('/fonts/Purista-Light.ttf') format('truetype');
+    src: url('fonts/Purista-Light.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Purista-Medium';
-    src: url('/fonts/Purista-Medium.ttf') format('truetype');
+    src: url('fonts/Purista-Medium.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Purista-SemiBold';
-    src: url('/fonts/Purista-SemiBold.ttf') format('truetype');
+    src: url('fonts/Purista-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Purista-Bold';
-    src: url('/fonts/Purista-Bold.ttf') format('truetype');
+    src: url('fonts/Purista-Bold.ttf') format('truetype');
 }
 /* Style the form container */
 .rendered-form {
