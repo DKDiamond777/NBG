@@ -38,7 +38,6 @@ body{
 
 .custom-shape-divider-bottom-1685228545 svg {
   position: relative;
-
   display: block;
   width: calc(187% + 1.3px);
   height: 218px;
@@ -49,7 +48,8 @@ body{
 }
 
 * {
-  font-family: Nunito, sans-serif;
+  font-family: "Purista-Bold";
+  text-align: center;
 }
 
 .responsive-cell-block {
@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 170px;
+      font-size: 150px;
 }
 
 @keyframes textclip {
