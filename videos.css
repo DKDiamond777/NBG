@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Purista-Light';
+    src: url('fonts/Purista-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Purista-Medium';
+    src: url('fonts/Purista-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Purista-SemiBold';
+    src: url('fonts/Purista-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Purista-Bold';
+    src: url('fonts/Purista-Bold.ttf') format('truetype');
+  }
+  .container1 {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .video1 {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    outline: 5px solid black;
+    max-width: 480px;
+    margin-right: 10px; /* Adjust this value as needed */
+  }
+  
+  .text1 {
+    font-family: "Purista-Medium";
+    margin-top: 100px;
+    font-size: 20px;
+  }
+  .container2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end; /* Align items to the right side */
+  }
+  
+  .video2 {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    outline: 5px solid black;
+    max-width: 480px;
+    margin-right: 50px; /* Adjusted to 50 pixels */
+  }
+  
+  .text2 {
+    font-family: "Purista-Medium";
+    margin-top: 100px;
+    font-size: 20px;
+    margin-right: 10px; /* Adjust this value as needed */
+    order: -1; /* Reverse the order of the flex items */
+  }
+  
+  
+  
+  
