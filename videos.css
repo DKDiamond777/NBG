@@ -26,7 +26,10 @@
     margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 100px;
-    outline: 5px solid black;
+    border-width: 5px 20px;
+    border: solid #000;
+    border-width: 0 20px;
+    border-radius: 10px;
     max-width: 480px;
     margin-right: 10px; /* Adjust this value as needed */
   }
@@ -34,6 +37,7 @@
   .text1 {
     font-family: "Purista-Medium";
     margin-top: 100px;
+    text-align: center;
     font-size: 20px;
   }
   .container2 {
@@ -46,7 +50,10 @@
     margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 100px;
-    outline: 5px solid black;
+    border-width: 5px 20px;
+    border: solid #000;
+    border-width: 0 20px;
+    border-radius: 10px;
     max-width: 480px;
     margin-right: 50px; /* Adjusted to 50 pixels */
   }
@@ -54,8 +61,9 @@
   .text2 {
     font-family: "Purista-Medium";
     margin-top: 100px;
+    text-align: center;
     font-size: 20px;
-    margin-right: 10px; /* Adjust this value as needed */
+    margin-right: -45px; /* Adjust this value as needed */
     order: -1; /* Reverse the order of the flex items */
   }
   
