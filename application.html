@@ -137,4 +137,29 @@
         });
       }
     </script>
+        <script>
+          async function sendContact(ev) {
+            ev.preventDefault();
+    
+            // Check if a previous submission exists in local storage
+            const previousSubmissionTime = localStorage.getItem('submissionTime');
+            if (previousSubmissionTime) {
+              const twentyFourHoursInMilliseconds = 24 * 60 * 60 * 1000;
+              const currentTime = new Date().getTime();
+              if (currentTime - previousSubmissionTime < twentyFourHoursInMilliseconds) {
+                alert('You can only submit one application per 24 hours.');
+                return;
+              }
+            }
+    
+            // Form submission code here
+    
+            // Store the current submission time in local storage
+            const currentTime = new Date().getTime();
+            localStorage.setItem('submissionTime', currentTime);
+    
+            // Reset the form fields
+            ev.target.reset();
+          }
+        </script>
     </div>
