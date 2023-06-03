@@ -138,28 +138,32 @@
       }
     </script>
         <script>
-          async function sendContact(ev) {
-            ev.preventDefault();
-    
-            // Check if a previous submission exists in local storage
-            const previousSubmissionTime = localStorage.getItem('submissionTime');
-            if (previousSubmissionTime) {
-              const twentyFourHoursInMilliseconds = 24 * 60 * 60 * 1000;
-              const currentTime = new Date().getTime();
-              if (currentTime - previousSubmissionTime < twentyFourHoursInMilliseconds) {
-                alert('You can only submit one application per 24 hours.');
-                return;
-              }
-            }
-    
-            // Form submission code here
-    
-            // Store the current submission time in local storage
-            const currentTime = new Date().getTime();
-            localStorage.setItem('submissionTime', currentTime);
-    
-            // Reset the form fields
-            ev.target.reset();
-          }
+async function sendContact(ev) {
+  ev.preventDefault();
+
+  const previousSubmissionTime = localStorage.getItem('submissionTime');
+  if (previousSubmissionTime) {
+    const twentyFourHoursInMilliseconds = 24 * 60 * 60 * 1000;
+    const currentTime = new Date().getTime();
+    const elapsedTime = currentTime - previousSubmissionTime;
+
+    if (elapsedTime < twentyFourHoursInMilliseconds) {
+      const remainingTime = twentyFourHoursInMilliseconds - elapsedTime;
+      const remainingHours = Math.floor(remainingTime / (1000 * 60 * 60));
+      const remainingMinutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+      const remainingSeconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      const remainingTimeText = `${remainingHours} hours, ${remainingMinutes} minutes, and ${remainingSeconds} seconds`;
+      alert(`You can submit another application in ${remainingTimeText}.`);
+      return;
+    }
+  }
+
+  // Form submission code here
+
+  const currentTime = new Date().getTime();
+  localStorage.setItem('submissionTime', currentTime);
+  ev.target.reset();
+}
         </script>
     </div>
